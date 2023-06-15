@@ -1,3 +1,4 @@
+// Guass Seidal
 #include<stdio.h>
 float getX(float x , float y , float z){
     return (17 - y + (2 * z)) / 20;
