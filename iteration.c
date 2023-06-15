@@ -29,6 +29,7 @@ int main(){
         count++;
         if(fabs(temp - g(temp)) < 0.00001) break;
     }while(fabs(g(x)) > err);
-    printf("Root of the equation is %f and value at g(%f) = %f", x , x , g(x));
+    printf("Root of the equation is %f and value at g(%f)
+           = %f", x , x , g(x));
     return 0;
 }
