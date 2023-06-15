@@ -1,3 +1,4 @@
+// Regula Falsi
 #include<stdio.h>
 #include<math.h>
 float f(float x){
@@ -17,7 +18,8 @@ int main(){
     float x = ((x0 * f(x1)) - (x1 * f(x0))) / (f(x1) - f(x0));
     int count = 0;
     while(fabs(f(x)) > err){
-        printf("\n%d Interval Value, value of x = %f , value of f(%f) = %f " , count++ , x , x , f(x));
+        printf("\n%d Interval Value, value of x = %f ,
+               value of f(%f) = %f " , count++ , x , x , f(x));
         if(f(x0) * f(x) < 0){
             x1 = x;
         }else{
@@ -27,6 +29,7 @@ int main(){
         printf("%f" , f(x));
     }
     printf("%f %f" , err, fabs(f(x)));
-    printf("\n Root of the Equation is -> %f and value of f(x) at x is %f" , x , f(x));
+    printf("\n Root of the Equation is -> %f 
+           and value of f(x) at x is %f" , x , f(x));
     return 0;
 }
