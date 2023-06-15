@@ -1,3 +1,4 @@
+// Newton Rapson
 #include<stdio.h>
 #include<math.h>
 float f(float x){
@@ -27,13 +28,16 @@ int main(){
     int count = 0;
     float temp;
     do{
-        printf("\n Iteration Number %d  x0 = %f  f(%f) = %f" , ++count , x0 , x0 , getValue(x0));
+        printf("\n Iteration Number %d  x0 = %f  
+               f(%f) = %f" , ++count , x0 , x0 , getValue(x0));
         temp = getValue(x0);
         if(fabs(x0 - temp) < err) break;
         x0 = temp;
         if(count > 100) break;
     }while(fabs(getValue(x0)));
-    printf("\n Root of the Equation is %f and at it is %f   and actual value %f" , x0 , getValue(x0) , f(x0));
+    printf("\n Root of the Equation is %f and at it 
+           is %f   and actual value %f" , x0 , getValue(x0) 
+           , f(x0));
     return 0;
     
 }
