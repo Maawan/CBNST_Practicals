@@ -44,7 +44,8 @@ int main(){
         x1 = getX(x0 , y0 , z0);
         y1 = getY(x1 , y0 , z0);
         z1 = getZ(x1 , y1 , z0);
-        printf("\n Iteration Number %d x = %0.3f y = %0.3f z = %0.3f" , count++ , x1 , y1 , z1);
+        printf("\n Iteration Number %d x = %0.3f y = %0.3f
+               z = %0.3f" , count++ , x1 , y1 , z1);
 
         prevX = x0;
         prevY = y0;
@@ -52,7 +53,8 @@ int main(){
         x0 = x1;
         y0 = y1;
         z0 = z1;
-    }while(fabs(x0 - prevX) > err || fabs(y0 - prevY) > err || fabs(z0 - prevZ) > err);
+    }while(fabs(x0 - prevX) > err || fabs(y0 - prevY) > err 
+           || fabs(z0 - prevZ) > err);
     printf("%0.3f   %0.3f   %0.3f  " , x0 , y0 , z0);
     return 0;
 }
